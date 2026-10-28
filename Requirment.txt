@@ -1,1 +1,15 @@
+elements = {
+"Hydrogen": ("H", 1),
+"Oxygen": ("O", 8),
+"Sodium": ("Na", 11),
+"Iron": ("Fe", 26),
+"Gold": ("Au", 79)
+}
 
+name = input("Enter element name: ").title()
+
+if name in elements:
+print("Symbol:", elements[name][0])
+print("Atomic Number:", elements[name][1])
+else:
+print("Element not found!")
